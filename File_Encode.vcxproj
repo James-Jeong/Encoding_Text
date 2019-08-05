@@ -72,18 +72,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>../../Build/$(Platform)$(Configuration)/(ProjectName)\</OutDir>
     <IntDir>../../Output/(Platform)$(Configuration)/(ProjectName)\</IntDir>
+    <ReferencePath>C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;$(ReferencePath)</ReferencePath>
+    <IncludePath>C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;$(ReferencePath);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>../../Build/$(Platform)$(Configuration)/(ProjectName)\</OutDir>
     <IntDir>../../Output/(Platform)$(Configuration)/(ProjectName)\</IntDir>
+    <ReferencePath>C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;$(ReferencePath)</ReferencePath>
+    <IncludePath>C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;$(ReferencePath);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>../../Build/$(Platform)$(Configuration)/(ProjectName)\</OutDir>
     <IntDir>../../Output/(Platform)$(Configuration)/(ProjectName)\</IntDir>
+    <ReferencePath>C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;$(ReferencePath)</ReferencePath>
+    <IncludePath>C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;$(ReferencePath);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>../../Build/$(Platform)$(Configuration)/(ProjectName)\</OutDir>
     <IntDir>../../Output/(Platform)$(Configuration)/(ProjectName)\</IntDir>
+    <ReferencePath>C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;$(ReferencePath)</ReferencePath>
+    <IncludePath>C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;$(ReferencePath);$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -91,9 +99,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\ehddn\source\repos\cppcore-master\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\ucrt\x86;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86;C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cppcore.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -102,9 +113,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\ehddn\source\repos\cppcore-master\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\ucrt\x86;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86;C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cppcore.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -115,11 +129,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\ehddn\source\repos\cppcore-master\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\ucrt\x86;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86;C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cppcore.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -130,29 +147,24 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\ehddn\source\repos\cppcore-master\Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\ucrt\x86;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.18362.0\um\x86;C:\Users\ehddn\source\repos\cppcore-master\Build\Win32Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cppcore.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\OneDrive\Desktop\BoB\크로스플랫폼 프로그래밍\cppcore-master\cppcore-master\Src\000_String\Unicode.cpp" />
-    <ClCompile Include="..\..\..\..\..\OneDrive\Desktop\BoB\크로스플랫폼 프로그래밍\cppcore-master\cppcore-master\Src\000_String\UnicodeEncoding.cpp" />
-    <ClCompile Include="..\..\..\..\..\OneDrive\Desktop\BoB\크로스플랫폼 프로그래밍\cppcore-master\cppcore-master\Src\000_String\UnicodeEncoding_Win.cpp" />
-    <ClCompile Include="..\..\..\..\..\OneDrive\Desktop\BoB\크로스플랫폼 프로그래밍\cppcore-master\cppcore-master\Src\000_String\Unicode_Win.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="text_encoding_detect.cpp" />
     <ClCompile Include="utf.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\OneDrive\Desktop\BoB\크로스플랫폼 프로그래밍\cppcore-master\cppcore-master\Src\000_String\stdafx.h" />
-    <ClInclude Include="..\..\..\..\..\OneDrive\Desktop\BoB\크로스플랫폼 프로그래밍\cppcore-master\cppcore-master\Src\000_String\Unicode.h" />
-    <ClInclude Include="..\..\..\..\..\OneDrive\Desktop\BoB\크로스플랫폼 프로그래밍\cppcore-master\cppcore-master\Src\000_String\UnicodeEncoding.h" />
-    <ClInclude Include="Define.h" />
+    <ClInclude Include="stdafx.h" />
     <ClInclude Include="text_encoding_detect.h" />
-    <ClInclude Include="Type.h" />
     <ClInclude Include="unicode_data.h" />
     <ClInclude Include="utf.h" />
   </ItemGroup>
